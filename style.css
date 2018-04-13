@@ -1,0 +1,64 @@
+body {
+  background-image: url(../img/sideProject.jpg);
+}
+
+section {
+  font-size: 3em;
+  color: white;
+}
+
+label{
+  font-size: 1.5em;
+  color: white;
+}
+
+input {
+  width: 20%;
+}
+
+button {
+  border: solid black .2em;
+  border-radius: 10px;
+  height: 5vh;
+  width: 10vw;
+  font-weight: bolder;
+}
+
+input {
+  height: 4vh;
+}
+
+fieldset {
+  max-width: 700px;
+  border: 7px solid #73094c;
+  border-radius: 75px;
+  padding: 10px;
+  text-align: center;
+}
+
+legend {
+  background-color: black;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 200px;
+}
+
+p {
+  margin-top: 2em;
+  font-size: 2em;
+  color: white; 
+}
+
+/* canvas */
+
+canvas{
+  border: solid blue 1em;
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 3em;
+}
