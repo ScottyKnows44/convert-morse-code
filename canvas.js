@@ -50,11 +50,6 @@ class Pong {
     this.context = canvas.getContext('2d');
     
     this.ball = new Ball;  //makes the ball
-    
-    this.ball.pos.x = 100;   //ball starting position at x and y
-    this.ball.pos.y = 50;
-    this.ball.vel.x = 300;   //ball velocity for x and y 
-    this.ball.vel.y = 300;
 
     this.players = [
       new Player,     //makes the 2 players
@@ -78,6 +73,8 @@ class Pong {
       requestAnimationFrame(callback);
     };
       callback();
+
+      this.reset()
   }
 
   //draw() draws the black canvas, the ball, and the two players
@@ -102,6 +99,14 @@ class Pong {
     this.context.fillStyle = '#fff';
     this.context.fillRect( rect.left, rect.top, rect.size.x, rect.size.y);
   }
+
+  reset() {
+    this.ball.pos.x = 200;   //ball starting position at x and y
+    this.ball.pos.y = 200;
+    this.ball.vel.x = 300;   //ball velocity for x and y 
+    this.ball.vel.y = 300;
+  }
+
    update(dt) {
 
     // moves the ball
@@ -112,7 +117,9 @@ class Pong {
     // doesnt make the ball go off the screen
   
     if (this.ball.left < 0 || this.ball.right > this.canvas.width) {
-        this.ball.vel.x = -this.ball.vel.x;
+      const playerId = this.ball.vel.x < 0 || 0;
+      // this.players[playerId].score++;
+      this.reset();
     }
   
     if (this.ball.top < 0 || this.ball.bottom > this.canvas.height){

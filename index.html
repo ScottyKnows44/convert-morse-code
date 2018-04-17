@@ -3,27 +3,42 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Arcade</title>    
   </head>
 
   <body>
     
+    <header>Welcome To The Arcade!</header>
+
+    <ul>
+     <li id="codeLink">Morse Code Converter</li>
+     <li id="pongLink">PONG!</li>
+     <li>Coming Soon...</li>
+    </ul>  
+
     <form id="submitForm"> 
       <label>
         This converts words into morse code!
       </label>
       <input name="input" id="input" type="text">
-      <button id="button">submit here</button>
+      <button id="button">Submit Here</button>
+      
+      <fieldset id ="answerForm">
+        <legend>Your Message Here!</legend>
+        <section id="answer"></section>
+      </fieldset>
     </form>
 
-    <fieldset>
-      <legend>Your Message Here!</legend>
-      <section id="answer">
-      </section>
-      </fieldset>
-      <p>PONG!</p>
+    <div id="pongView">
       <canvas id="pong" width="800px" height="400px"></canvas>
-      
-    <script src="app.js"></script>
-    <script src="canvas.js"></script>
+    </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="views.js"></script>
+     <script src="app.js"></script>
+     <script src="canvas.js"></script>
   </body>
 </html>
