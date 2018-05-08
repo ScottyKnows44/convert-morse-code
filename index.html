@@ -14,9 +14,9 @@
     <header>Welcome To The Arcade!</header>
 
     <ul>
-     <li id="codeLink">Morse Code Converter</li>
+     <li id="codeLink">Converter</li>
      <li id="pongLink">PONG!</li>
-     <li>Coming Soon...</li>
+     <li id="calculator">Calculator</li>
     </ul>  
 
     <form id="submitForm"> 
@@ -36,9 +36,49 @@
       <canvas id="pong" width="800px" height="400px"></canvas>
     </div>
 
+   <section id="calc">
+
+    <form id="form">
+    <input type="text" size="15"/>  
+    </form>
+
+
+    <div class="row">
+      <button id="/">/</button>
+      <button id="*">*</button>
+      <button id="-">-</button>
+    </div>
+
+    <div class="row">
+      <button id="7">7</button>
+      <button id="8">8</button>
+      <button id="9">9</button>
+    </div>
+
+    <div class="row">
+      <button id="4">4</button>
+      <button id="5">5</button>
+      <button id="6">6</button>
+    </div>
+
+    <div class="row">
+      <button id="1">1</button>
+      <button id="2">2</button>
+      <button id="3">3</button>
+    </div>
+
+    <div class="row">
+      <button id="+">+</button>
+      <button id="enter">enter</button>
+    </div>
+      
+   </section>
+
+      
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script src="views.js"></script>
      <script src="app.js"></script>
      <script src="canvas.js"></script>
+     <script src="calc.js"></script>
   </body>
 </html>

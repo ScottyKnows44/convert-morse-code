@@ -6,7 +6,7 @@ header {
   color: white;
   font-family: 'Press Start 2P', cursive;
   font-size: 3em;
-  width: 40%;
+  width: 80%;
   margin-top: 2em;
   text-align: center;
   margin-left: auto;
@@ -15,7 +15,7 @@ header {
 }
 
 li {
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Press Start 2P', cursive;
   color: white;
   list-style: none;
@@ -24,21 +24,19 @@ li {
   display: inline-block;
 }
 
-section {
-  font-size: 3em;
+#answer {
+  font-size: 4em;
   color: white;
 }
 
 label{
   font-size: 3vw;
-  max-width: 25%;
   color: white;
 }
 
 input {
   width: 20vw;
-  max-width: 25%;
-
+  font-size: 3em;
 }
 
 button {
@@ -46,7 +44,7 @@ button {
   border-radius: 10px;
   height: 5vh;
   width: 20vw;
-  max-width: 15%;
+
   font-weight: bolder;
 }
 
@@ -55,7 +53,7 @@ input {
 }
 
 fieldset {
-  max-width: 70vw;
+  
   border: 7px solid #73094c;
   border-radius: 75px;
   padding: 1vw;
@@ -67,7 +65,7 @@ legend {
   border: 1px solid #dcdcdc;
   border-radius: 10px;
   color: white;
-  padding: .7vw 1.5vw;
+  padding: .7vw;
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
@@ -84,7 +82,6 @@ margin-right: auto;
 
 #button {
   font-family: 'Press Start 2P', cursive;
-  max-width: 100%;
   width: 9vw;
 }
 
@@ -104,4 +101,46 @@ canvas{
   margin-bottom: 12vh;
 }
 
-@medias
+#calc{
+  background-color:white;
+  width: 32vw;
+  height: 45vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 700px) {
+
+  header {
+  font-size: 2em;  
+  }
+
+  label {
+    font-size: 2em;
+  }
+
+  input {
+    font-size: 2em;
+  }
+
+  li {
+    font-size: 1.7em;
+    display: inline;
+    margin-right: auto;
+    margin-left:auto;
+    padding-bottom: 3em;
+  }
+
+   #submitForm #input {
+    width: 80vw;
+  }
+
+ #button {
+   width:80vw ;
+ }
+
+ #calc{
+  width: 80vw;
+}
+ 
+}
