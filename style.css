@@ -15,7 +15,7 @@ header {
 }
 
 li {
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: 'Press Start 2P', cursive;
   color: white;
   list-style: none;
@@ -69,20 +69,26 @@ legend {
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 2em;
   width: 20vw;
   text-align: center;
 }
 
-form{
-width:80%;
-margin-top: 8vh;
-margin-left: auto;
-margin-right: auto;
+  #formInput{
+  margin-left: 5vw;
+  width:80%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 #button {
   font-family: 'Press Start 2P', cursive;
-  width: 9vw;
+  width: 11vw;
+  float: right;
+}
+
+.row {
+ display: inline-block
 }
 
 /* canvas */
@@ -103,11 +109,12 @@ canvas{
 
 #calc{
   background-color:white;
-  width: 32vw;
+  width: 65%;
   height: 45vh;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 @media only screen and (max-width: 700px) {
 
@@ -136,11 +143,13 @@ canvas{
   }
 
  #button {
-   width:80vw ;
+  width:8vw;
  }
 
- #calc{
-  width: 80vw;
-}
- 
-}
+ .row {
+   
+ }
+
+} 
+
+

@@ -122,7 +122,7 @@ class Pong {
       this.reset();
     }
   
-    if (this.ball.top < 0 || this.ball.bottom > this.canvas.height){
+    if (this.ball.top < 0 || this.ball.bottom > this.canvas.height) {
       this.ball.vel.y = -this.ball.vel.y;
     }
 
